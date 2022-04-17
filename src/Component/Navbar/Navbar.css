@@ -1,7 +1,7 @@
 
 .navbar{
   display: flex;
-  justify-content: ;
+  
 }
 .header{
   display: flex;
@@ -13,4 +13,10 @@
   color: black;
   margin-left: 30px;
   font-size: 22px;
+  }
+  .signout{
+    border: none;
+    background-color:white;
+    color:rgb(57, 109, 255);
+    font-size: 22px;
   }

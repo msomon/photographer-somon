@@ -23,7 +23,7 @@ const Navbar = () => {
     
       {
         user?.uid ? 
-        <button onClick={logout}>Sign Out</button> :
+        <button className='signout' onClick={logout}>Sign Out</button> :
       <CustomLink to='/login'>Login</CustomLink>
 
       }
