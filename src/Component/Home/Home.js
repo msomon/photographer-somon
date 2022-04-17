@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 
 import { Carousel} from 'react-bootstrap';
-
+import usehooks from '../../Hooks/UseHooks';
+import Bundle from './Bundle/Bundle'
 import img1 from '../../images/img-1.webp';
 import img2 from '../../images/img-2.webp';
 import img3 from '../../images/img-3.webp';
 import './Home.css'
 
 const Home = () => {
+
+  const {bundles,setBundle}=usehooks()
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -15,7 +18,7 @@ const Home = () => {
   };
   
    
-     
+   
   return (
     <div className='container slider'>
     <Carousel activeIndex={index} onSelect={handleSelect}>
@@ -57,6 +60,13 @@ const Home = () => {
       </Carousel.Caption>
     </Carousel.Item>
   </Carousel>
+  <h2 className='text-primary text-center mt-4'>Some Bundles Offer </h2>
+  <div className='bundles'>
+   
+  {
+    bundles.map(bundle=><Bundle bundle={bundle} key={bundle.id}></Bundle>)
+  }
+  </div>
     </div>
   );
 };

@@ -1,0 +1,17 @@
+.bundle{
+  border: 1px solid wheat;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.bundle img{
+  width: 400px;
+  height: 300px;
+ border-radius: 10px;
+ margin: auto;
+}
+.bundle-info{
+margin-top: 10px;
+}

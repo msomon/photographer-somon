@@ -3,8 +3,6 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import CustomLink from '../CustomLink/CustomLink';
-
-
 import './Navbar.css'
 
 const Navbar = () => {
@@ -13,7 +11,7 @@ const Navbar = () => {
     signOut(auth);
   }
   return (
-    <div className='container navbar'>
+    <div className='navbar'>
       <h3>My Pashion</h3>
       <div className='header'>
       <CustomLink to='/'>Home</CustomLink>
