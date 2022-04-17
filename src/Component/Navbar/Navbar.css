@@ -1,7 +1,7 @@
 
 .navbar{
   display: flex;
-  
+  margin-top: 10px;
 }
 .header{
   display: flex;
@@ -19,4 +19,5 @@
     background-color:white;
     color:rgb(57, 109, 255);
     font-size: 22px;
+   
   }

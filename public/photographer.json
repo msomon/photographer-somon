@@ -1,9 +1,44 @@
 [
   {
-    "img": "images/img-1.jpg",
-    "name": "Md Hasan",
+    "img": "",
+    "name": "Days Bundle",
     "id": "1",
-    "comment":"The Nike Winflo 8 is a budget-friendly shoe that doesn’t offer a whole lot of versatility but for the price, it’s a solid choice. I would recommend this shoe to someone who is just getting into",
-    "rating":" 5 out of 4"
+    "description":"We are looking for a creative and versatile Photographer . ",
+    "price":"$1000"
+  } ,
+  {
+    "img": "",
+    "name": "Weekly Bundle",
+    "id": "2",
+    "description":" We Are Videographer to capture memories and creates exceptional experiences for our clients. ",
+    "price":"$6000"
+  } ,
+  {
+    "img": "",
+    "name": "Monthly Bundle",
+    "id": "3",
+    "description":" We are currently offering an exciting opportunity for a motivated individual who has a passion for photography. ",
+    "price":"$24000"
+  } ,
+  {
+    "img": "",
+    "name": "Weekly Bundle",
+    "id": "2",
+    "description":" We Are Videographer to capture memories and creates exceptional experiences for our clients. ",
+    "price":"$100"
+  } ,
+  {
+    "img": "",
+    "name": "Weekly Bundle",
+    "id": "2",
+    "description":" We Are Videographer to capture memories and creates exceptional experiences for our clients. ",
+    "price":"$100"
+  } ,
+  {
+    "img": "",
+    "name": "Weekly Bundle",
+    "id": "2",
+    "description":" We Are Videographer to capture memories and creates exceptional experiences for our clients. ",
+    "price":"$100"
   } ,
 ]

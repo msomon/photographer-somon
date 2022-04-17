@@ -1,65 +1,66 @@
-import React, { useRef, useState } from 'react';
-import { Button, Form } from 'react-bootstrap';
-import { Link,useNavigate } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init'
+import auth from '../../firebase.init';
 import CommonLogin from '../CommonLogin/CommonLogin';
-
+import { useNavigate } from 'react-router-dom';
 
 const Registar = () => {
-  const emailRef = useRef('');
-const navigate= useNavigate();
-const [
-  createUserWithEmailAndPassword,
-  error,user
-] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true });
-const [updateProfile,updateError]= useUpdateProfile(auth)
- const [agree,setAgree]=useState();
+  const navigate = useNavigate()
+  const [
+    createUserWithEmailAndPassword,
+    user,
+    loading,
+    error,
+  ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true });
+  const [updateProfile,updateError]= useUpdateProfile(auth)
+  const [agree,setAgree]=useState();
 
-const handleSubmit = async(event)=>{
-event.preventDefault();
-const name =event.target.name.value ;
-const email =event.target.email.value;
-const password = event.target.password.value;
+  const registar =async(event)=>{
+    event.preventDefault()
+    const name = event.target.name.value
+    const email = event.target.email.value
+    const password = event.target.password.value
 
- await createUserWithEmailAndPassword(email, password)
- await updateProfile ({displayName:name})
+   await createUserWithEmailAndPassword(email,password)
+    await updateProfile ({displayName:name})
  alert('update profile ')
-  navigate('/home')
+ navigate('/login')
+    console.log(name,email,password);
 
-}
+  }
+  const navigateRegistar=()=>{
+    navigate('/login')
+    }
 
-
-const navigateRegistar=()=>{
-navigate('/login')
-}
   return (
-    <div className='container w-50 mx-auto mt-3'>
-      <h1 className='text-primary text-center'> Please Registar </h1>
-      <Form onSubmit={handleSubmit}>
-      <Form.Group className="mb-3" controlId="formName">
+    <div className='container w-50 mx-auto'>
+      <h1>Registar Now</h1>
+      <Form onSubmit={registar}>
+      <Form.Group className="mb-3" controlId="formBasicname">
     <Form.Label>Name</Form.Label>
-    <Form.Control type="text" name='name' placeholder=" Your name" required />
+    <Form.Control required name='name' type="text" placeholder="Name" />
   </Form.Group>
+
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
-    <Form.Control ref={emailRef} name='email' type="email" placeholder="Enter email" required />
+    <Form.Control name='email' required type="email" placeholder="Enter email" />
   </Form.Group>
 
+  
   <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Password</Form.Label>
-    <Form.Control  type="password" name='password' placeholder="Password" required />
+    <Form.Control name='password' required type="password" placeholder="Password" />
   </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicCheckbox">
     <Form.Check className={agree ? "ps-2 text-primary": "ps-2 text-danger"} onClick={()=>setAgree(!agree)} type="checkbox" label="Accept Genius Car Terms and conditions" />
   </Form.Group>
-  <Button onClick={navigateRegistar} variant="primary" type="submit">
+  <Button variant="primary" type="submit">
     Registar
   </Button>
 </Form>
-     <p>Already have An Account ? <Link to='/login' className='text-danger text-decoration-none' onClick={navigateRegistar}>Please Login </Link></p>
-     
- <CommonLogin></CommonLogin>
+<CommonLogin></CommonLogin>
     </div>
   );
 };
