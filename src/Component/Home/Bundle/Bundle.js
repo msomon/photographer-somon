@@ -1,16 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Bundle.css'
 
 const Bundles = ({bundle}) => {
-  const {img,name,description,price,}=bundle
-  console.log(price);
+  const {img,description,price}= bundle
+  console.log(bundle.package);
   return (
     <div className='bundle'>
       <img src={img} alt="" />
       <div className='bundle-info'>
-      <h4>Name:{name}</h4>
-      <p>Description:{description}</p>
-      <h5>Price:{price}</h5>
+      <h4>Name: {bundle.package}</h4>
+      <p>Description: {description}</p>
+      <h5>Price: {price}</h5>
+      <Link to='/checkout'>Booking Now</Link>
       </div>
       
     </div>

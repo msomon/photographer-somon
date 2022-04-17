@@ -10,7 +10,7 @@ import './Home.css'
 
 const Home = () => {
 
-  const {bundles,setBundle}=usehooks()
+  const {bundles,setBundles}=usehooks()
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
@@ -18,7 +18,7 @@ const Home = () => {
   };
   
    
-   
+   console.log(bundles);
   return (
     <div className='container slider'>
     <Carousel activeIndex={index} onSelect={handleSelect}>
@@ -61,6 +61,7 @@ const Home = () => {
     </Carousel.Item>
   </Carousel>
   <h2 className='text-primary text-center mt-4'>Some Bundles Offer </h2>
+  
   <div className='bundles'>
    
   {

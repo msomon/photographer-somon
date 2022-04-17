@@ -1,42 +1,42 @@
 [
   {
     "img": "./images/dinner.webp",
-    "name": "Days Bundle",
+    "package": "Days Bundle",
     "id": "1",
     "description":"We are looking for a creative and versatile Photographer . ",
     "price":"$1000"
   } ,
   {
     "img": "./images/award.webp",
-    "name": "Weekly Bundle",
+    "package": "Weekly Bundle",
     "id": "2",
     "description":" We Are Videographer to capture memories and creates exceptional experiences for our clients. ",
     "price":"$6000"
   } ,
   {
     "img": "./images/graduation.webp",
-    "name": "Hours Bundle",
+    "package": "Hours Bundle",
     "id": "3",
     "description":" We are currently offering an exciting opportunity for a motivated individual who has a passion for photography. ",
     "price":"$300"
   } ,
   {
     "img": "./images/wedding.webp",
-    "name": "Marriage Bundle",
+    "package": "Marriage Bundle",
     "id": "4",
     "description":" Real Estate Photographer Qualifications • Have a strong real estate portfolio • Be available for multiple shoots a week • The ability to prioritize multiple tasks, ",
     "price":"$4000"
   } ,
   {
     "img": "./images/birthday.webp",
-    "name": "Birthday Bundle",
+    "package": "Birthday Bundle",
     "id": "5",
     "description":" Experienced In All Sorts Of Photography & Specialized In Wedding Photography. Call Now. Stainless Steel Cover & Metallic Page Albums ",
     "price":"$1500"
   } ,
   {
     "img": "./images/grandopening.webp",
-    "name": "Opening Ceremony Bundle",
+    "package": "Opening Ceremony Bundle",
     "id": "6",
     "description":" We take pride in knowing that our approach for events has one sole focus – your business. We take all the stress off your hands, so you never lose a step in running your business ",
     "price":"$2500"

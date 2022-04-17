@@ -6,6 +6,7 @@
   background-color: #6047ec;
   position: sticky;
   top: 0px;
+  z-index: 1;
 }
 h3{
   color: white;
