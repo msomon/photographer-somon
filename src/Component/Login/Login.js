@@ -5,6 +5,8 @@ import { useLocation, useNavigate} from 'react-router-dom';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import CommonLogin from '../CommonLogin/CommonLogin';
+import { toast } from 'react-toastify';
+
 
 
 const Login = () => {
@@ -33,7 +35,7 @@ signInWithEmailAndPassword(email, password)
 const resetPassword=async()=>{
   const email = emailRef.current.value;
   await sendPasswordResetEmail(email);
-  alert('Reset email');
+  toast('Reset email');
 }
 
 
@@ -60,6 +62,7 @@ navigate('/registar')
     <Form.Label>Password</Form.Label>
     <Form.Control ref={passwordRef} name='password' type="password" placeholder="Password" required />
   </Form.Group>
+  
   <Button variant="primary" type="submit">
    Login
   </Button>

@@ -1,21 +1,25 @@
 import { Button } from 'react-bootstrap';
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
-import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword} from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import CommonLogin from '../CommonLogin/CommonLogin';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Registar = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  
   const [
     createUserWithEmailAndPassword,
     user,
     loading,
     error,
   ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true });
-  const [updateProfile,updateError]= useUpdateProfile(auth)
   const [agree,setAgree]=useState();
+  
 
   const registar =async(event)=>{
     event.preventDefault()
@@ -23,14 +27,13 @@ const Registar = () => {
     const email = event.target.email.value
     const password = event.target.password.value
 
-   await createUserWithEmailAndPassword(email,password)
-    await updateProfile ({displayName:name})
- alert('update profile ')
- navigate('/login')
-    console.log(name,email,password);
-
+    createUserWithEmailAndPassword(email,password)
+    toast('Registar Successfully')
+    // await updateProfile ({displayName:name})
+    // console.log(error?.massage);
+    navigate('/login')
   }
-  const navigateRegistar=()=>{
+  const navigateLogin=()=>{
     navigate('/login')
     }
 
@@ -60,7 +63,9 @@ const Registar = () => {
     Registar
   </Button>
 </Form>
+<p className='mt-2'>Have a Account? <span className='text-primary' onClick={navigateLogin}>Please Login </span></p>
 <CommonLogin></CommonLogin>
+
     </div>
   );
 };

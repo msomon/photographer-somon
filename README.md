@@ -1,3 +1,31 @@
+# PHOTOGHRAPHER SOMON 
+## livesite-link:https://photographer-somon.web.app/
+
+*bullet point 
+
+* Home Page
+* Checkout Page
+* Blogs Page
+* About Page
+* Login Page
+* Registar Page
+
+
+
+## List of Technology Used In Project 
+### React Router
+### Bootstrap
+### React-bootstrap
+### Firebase
+### React-firebase-hooks
+### React-toastify
+ 
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
