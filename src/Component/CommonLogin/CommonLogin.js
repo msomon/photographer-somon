@@ -2,7 +2,7 @@ import React from 'react';
 import auth from '../../firebase.init';
 import {useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
-
+import Google from '../../images/google.jpg'
 const CommonLogin = () => {
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
   const location = useLocation();
