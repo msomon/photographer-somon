@@ -9,6 +9,7 @@ import { Route, Routes } from 'react-router-dom';
 import Registar from './Component/Registar/Registar';
 import Checkout from './Component/Checkout/Checkout';
 import NotFound from './Component/NotFound/NotFound';
+import RequireAuth from './Component/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/checkout' element={<Checkout></Checkout>}></Route>
+        <Route path='/checkout' element={<RequireAuth>
+          <Checkout></Checkout>
+        </RequireAuth>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
