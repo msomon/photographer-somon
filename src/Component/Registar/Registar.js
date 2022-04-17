@@ -1,4 +1,4 @@
-import React, {useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link,useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
@@ -7,6 +7,7 @@ import CommonLogin from '../CommonLogin/CommonLogin';
 
 
 const Registar = () => {
+  const emailRef = useRef('');
 const navigate= useNavigate();
 const [
   createUserWithEmailAndPassword,
@@ -42,7 +43,7 @@ navigate('/login')
   </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
-    <Form.Control  name='email' type="email" placeholder="Enter email" required />
+    <Form.Control ref={emailRef} name='email' type="email" placeholder="Enter email" required />
   </Form.Group>
 
   <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -50,13 +51,14 @@ navigate('/login')
     <Form.Control  type="password" name='password' placeholder="Password" required />
   </Form.Group>
   <Form.Group className="mb-3" controlId="formBasicCheckbox">
-    <Form.Check className={agree ? "ps-2 text-primary": "ps-2 text-danger"} onClick={()=>setAgree(!agree)} type="checkbox" label="Accept Photogaphers Terms and conditions" />
+    <Form.Check className={agree ? "ps-2 text-primary": "ps-2 text-danger"} onClick={()=>setAgree(!agree)} type="checkbox" label="Accept Genius Car Terms and conditions" />
   </Form.Group>
-  <Button variant="primary" type="submit">
+  <Button onClick={navigateRegistar} variant="primary" type="submit">
     Registar
   </Button>
 </Form>
-     <p>Already have An Account ? <Link to='/login' className='text-danger text-decoration-none' onClick={navigateRegistar}>Please Login </Link></p>  
+     <p>Already have An Account ? <Link to='/login' className='text-danger text-decoration-none' onClick={navigateRegistar}>Please Login </Link></p>
+     
  <CommonLogin></CommonLogin>
     </div>
   );

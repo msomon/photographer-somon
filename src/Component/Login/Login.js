@@ -64,7 +64,7 @@ navigate('/registar')
    Login
   </Button>
 </Form>
-     <p className='mt-2'>New To Genius Car ? <span className='text-primary' onClick={navigateRegistar}>Please Registar </span></p>
+     <p className='mt-2'>New somon photography ? <span className='text-primary' onClick={navigateRegistar}>Please Registar </span></p>
      <p className='mt-2'>Forget password ? <span className='text-primary' onClick={resetPassword}>Reset password </span></p>
      <CommonLogin></CommonLogin>
     </div>
