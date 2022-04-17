@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <div>
       <h1>Photographer-somon</h1>
-      <h1>home</h1>
-      <h3>sdsdsd</h3>
+      
     </div>
   );
 };
