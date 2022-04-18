@@ -48,7 +48,6 @@ const Checkout = () => {
   Submit
 </Button>
 </Form>
-
   </div>
   );
 };
