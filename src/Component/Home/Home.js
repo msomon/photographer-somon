@@ -7,6 +7,7 @@ import img1 from '../../images/img-1.webp';
 import img2 from '../../images/img-2.webp';
 import img3 from '../../images/img-3.webp';
 import './Home.css'
+import Review from './Review/Review';
 
 
 const Home = () => {
@@ -29,7 +30,7 @@ const Home = () => {
         alt="First slide"
       />
       <Carousel.Caption>
-        <h3>Some Photos </h3>
+        <h3> Welcome My Website </h3>
         <p>Good Quality Camera</p>
       </Carousel.Caption>
     </Carousel.Item>
@@ -41,7 +42,7 @@ const Home = () => {
       />
 
       <Carousel.Caption>
-        <h3>Some Photos</h3>
+        <h3>Welcome Photography World</h3>
         <p>Quality full Picture and Nature</p>
       </Carousel.Caption>
     </Carousel.Item>
@@ -53,7 +54,7 @@ const Home = () => {
       />
 
       <Carousel.Caption>
-        <h3>Some Photos</h3>
+        <h3>Your Opinion My Commitment</h3>
         <p>
           Highly Trained Photographer 
         </p>
@@ -68,6 +69,10 @@ const Home = () => {
   {
     bundles.map(bundle=><Bundle bundle={bundle} key={bundle.id}></Bundle>)
   }
+  </div>
+
+  <div>
+    <Review></Review>
   </div>
     </div>
   );

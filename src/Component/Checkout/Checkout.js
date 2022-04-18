@@ -13,7 +13,7 @@ import './Checkout.css'
 const Checkout = () => {
 
   const [user]=useAuthState(auth);
-    console.log(user);
+    // console.log(user);
 
   const handleSubmit =(event)=>{
     
@@ -22,7 +22,7 @@ const Checkout = () => {
   }
   return (
     <div className='container w-50 mx-auto checkout'>
-    <h1 className='mt-1'>Submit Now</h1>
+    <h1 className='mt-1'>Checkout Now</h1>
     <Form onSubmit={handleSubmit}>
     <Form.Group className="mb-3" controlId="formBasicname">
   <Form.Label>Name</Form.Label>

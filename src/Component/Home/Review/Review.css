@@ -1,0 +1,18 @@
+.reviews{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+
+}
+
+.review{
+border: 1px solid blue;
+margin: 10px;
+padding: 10px;
+text-align: center;
+border-radius:20px ;
+margin-bottom: 40px;
+}
+.review img{
+width: 300px;
+border-radius: 15px;
+}

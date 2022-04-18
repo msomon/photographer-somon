@@ -1,0 +1,33 @@
+import React from 'react';
+import './Review.css'
+import person1 from '../../../images/person1.webp'
+import person2 from '../../../images/person2.webp'
+import person3 from '../../../images/person3.webp'
+
+const Review = () => {
+  return (
+    <div className='container '>
+      <h2 className='text-center text-success mb-4'>Customer Opinion</h2>
+      <div className='reviews'>
+      <div className='review'>
+      <img src={person1} alt="" />
+      <h4>Name: Arle Rois</h4>
+      <p>Comment: I am setisfied of his work .He is a Good photographer .</p>
+      </div>
+      <div className='review'>
+      <img src={person2} alt="" />
+      <h4>Name:Hiram Baker</h4>
+      <p>Comment: He is very Professetional and pleasure Photographer . </p>
+      </div>
+      <div className='review'>
+      <img src={person3} alt="" />
+      <h4>Name:Kris Moris</h4>
+      <p>Comment: Photos quality   are awesome and he is brilliant person .</p>
+      </div>
+      
+    </div>
+    </div>
+  );
+};
+
+export default Review;

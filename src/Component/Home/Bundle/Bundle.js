@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import './Bundle.css'
 
 const Bundles = ({bundle}) => {
-  const {img,description,price}= bundle
-  console.log(bundle.package);
+  const {img,description,price}= bundle ;
   return (
     <div className='bundle'>
       <img src={img} alt="" />
