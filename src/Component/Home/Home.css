@@ -1,13 +1,14 @@
 .carosel{
-  margin-top: 30px;
-  height: 600px;
+  
+  height: 650px;
   padding: 5px;
   z-index: 2;
+  margin:10px 10px 5px 5px;
 }
 .bundles{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  margin-top: 55px;
+  margin-top: 35px;
   margin-bottom: 20px;
 }
 

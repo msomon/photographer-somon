@@ -8,6 +8,7 @@ import img2 from '../../images/img-2.webp';
 import img3 from '../../images/img-3.webp';
 import './Home.css'
 
+
 const Home = () => {
 
   const {bundles,setBundles}=usehooks()
@@ -17,10 +18,9 @@ const Home = () => {
     setIndex(selectedIndex);
   };
   
-   
-   console.log(bundles);
   return (
-    <div className='container carosel'>
+    <div className=''>
+    <div className='carosel'>
     <Carousel activeIndex={index} onSelect={handleSelect}>
     <Carousel.Item>
       <img
@@ -60,7 +60,8 @@ const Home = () => {
       </Carousel.Caption>
     </Carousel.Item>
   </Carousel>
-  <h2 className='text-primary text-center mt-4'>Some Bundles Offer </h2>
+  </div>
+  <h2 className='text-primary text-center mt-5'>Some Bundles Offer </h2>
   
   <div className='bundles'>
    

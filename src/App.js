@@ -11,6 +11,8 @@ import Checkout from './Component/Checkout/Checkout';
 import NotFound from './Component/NotFound/NotFound';
 import RequireAuth from './Component/RequireAuth/RequireAuth';
 import { ToastContainer } from 'react-toastify';
+import Footer from './Component/Footer/Footer';
+
 
 
 function App() {
@@ -28,9 +30,9 @@ function App() {
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/registar' element={<Registar></Registar>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
-        
         </Routes>
         <ToastContainer />
+      <Footer></Footer>
     </div>
   );
 }
