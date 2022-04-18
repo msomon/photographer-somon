@@ -6,7 +6,7 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import auth from '../../firebase.init';
 import CommonLogin from '../CommonLogin/CommonLogin';
 import { toast } from 'react-toastify';
-
+import './Login.css'
 
 
 const Login = () => {
@@ -50,7 +50,7 @@ navigate('/registar')
 
 
   return (
-    <div className='container w-50 mx-auto mt-3'>
+    <div className='container w-50 mx-auto mt-3 login'>
       <h1 className='text-primary text-center'> Please login </h1>
       <Form onSubmit={handleLogin}>
   <Form.Group className="mb-3" controlId="formBasicEmail">

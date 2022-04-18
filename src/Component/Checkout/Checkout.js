@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
-
+import './Checkout.css'
 
 
 
@@ -21,7 +21,7 @@ const Checkout = () => {
      toast('Submit Successfully')
   }
   return (
-    <div className='container w-50 mx-auto'>
+    <div className='container w-50 mx-auto checkout'>
     <h1 className='mt-1'>Submit Now</h1>
     <Form onSubmit={handleSubmit}>
     <Form.Group className="mb-3" controlId="formBasicname">

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
   return (
-    <div className='container'>
+    <div className='container mt-3' style={{marginBottom:'190px'}} >
       Ans1 = <p>Authentication is the process of verifying  someone but Authorization is the process of verifying what specific applications. Authentication works through passwords, one-time pins, biometric information, and other information provided or entered by the user.Authorization works through settings that are implemented and maintained by the organization.Authentication verifies who the user is.Authorization determines what resources a user can access.</p>
 
       Ans2 = <p>
