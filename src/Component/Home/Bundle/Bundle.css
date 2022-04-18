@@ -14,6 +14,8 @@
 }
 .bundle-info{
 margin-top: 10px;
+justify-content: center;
+align-items: center;
 }
 .booking{
   text-decoration: none;

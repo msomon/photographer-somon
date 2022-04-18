@@ -12,7 +12,7 @@ const Bundles = ({bundle}) => {
       <h4>Package: {bundle.package}</h4>
       <p>Description: {description}</p>
       <h5>Price: {price}</h5>
-      <Link className='booking btn btn-success' to='/checkout'>Booking Now</Link>
+      <Link className='booking btn btn-success mt-1' to='/checkout'>Booking Now</Link>
       </div>
       
     </div>
