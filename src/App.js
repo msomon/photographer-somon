@@ -7,7 +7,7 @@ import About from '././Component/About/About'
 import Login from '././Component/Login/Login'
 import { Route, Routes } from 'react-router-dom';
 import Registar from './Component/Registar/Registar';
-import Checkout from './Component/Checkout/Checkout';
+import Checkout from './Component/Home/Bundle/Checkout/Checkout';
 import NotFound from './Component/NotFound/NotFound';
 import RequireAuth from './Component/RequireAuth/RequireAuth';
 import { ToastContainer } from 'react-toastify';

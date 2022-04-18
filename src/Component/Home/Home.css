@@ -17,9 +17,8 @@
 @media(max-width:576px){
   .carosel{
     width: 550px;
-    z-index: 2;
-   
-   margin:10px auto;
+  margin-left: 0px;
+  
   }
   .bundles{
     display: grid;

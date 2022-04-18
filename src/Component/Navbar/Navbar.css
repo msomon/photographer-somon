@@ -8,7 +8,7 @@
   top: 0px;
   z-index: 1;
 }
-.title{
+.name{
   color:wheat;
   font-size: 25px;
  margin-top: 10px;
@@ -34,39 +34,34 @@
 
 
   /* //   responsive  // */
-
   @media(max-width:576px){
     .navbar{
       display: flex;
       justify-content:center;
       align-items: center;
-      position: sticky;
-      top: 0px;
-      z-index: 1;
       overflow-x: hidden;
       /* margin: auto; */
     }
     
     .header{
       display: flex;
-      
-      
+    
     }
-    .title{
-      font-size: 16px;
+    .name{
+      font-size: 17px;
       margin-top: 16px;
       margin-right: 15px;
       margin-left:0px;
     }
     .header a{
       margin-left: 5px;
-      font-size: 15px;
+      font-size: 17px;
       }
       .signout{
         border: none;
         background-color:#6047ec;
         color:white;
-        font-size: 12px;
+        font-size: 17px;
        
       }
   }

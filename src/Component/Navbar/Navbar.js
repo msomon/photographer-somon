@@ -12,7 +12,7 @@ const Navbar = () => {
   }
   return (
     <div className='navbar'>
-      <p className='title'>My Pashion</p>
+      <p className='name'>My Pashion</p>
       <div className='header'>
       <CustomLink to='/'>Home</CustomLink>
       <CustomLink to='/checkout'>Checkout</CustomLink>

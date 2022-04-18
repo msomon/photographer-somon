@@ -16,3 +16,17 @@ margin-bottom: 40px;
 width: 300px;
 border-radius: 15px;
 }
+
+/* //   responsive  // */
+@media(max-width:576px){
+  .reviews{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    
+    }
+    .review{
+      width:500px;
+    margin-left: 10px;
+    }
+  
+}

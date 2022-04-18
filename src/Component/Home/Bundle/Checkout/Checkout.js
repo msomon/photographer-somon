@@ -1,20 +1,16 @@
 
-import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import './Checkout.css'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init';
+import auth from '../../../../firebase.init';
 import './Checkout.css'
 
 
 
 const Checkout = () => {
-
   const [user]=useAuthState(auth);
-    // console.log(user);
-
   const handleSubmit =(event)=>{
     
     event.preventDefault()
@@ -22,7 +18,7 @@ const Checkout = () => {
   }
   return (
     <div className='container w-50 mx-auto checkout'>
-    <h1 className='mt-1'>Checkout Now</h1>
+    <h1 className='mt-1'>Checkout Now </h1>
     <Form onSubmit={handleSubmit}>
     <Form.Group className="mb-3" controlId="formBasicname">
   <Form.Label>Name</Form.Label>
@@ -31,7 +27,7 @@ const Checkout = () => {
 
 <Form.Group className="mb-3" controlId="formBasicEmail">
   <Form.Label>Email address</Form.Label>
-  <Form.Control value={user.email} readOnly name='email' required type="email" placeholder="Enter email" />
+  <Form.Control value={user?.email} readOnly name='email' required type="email" placeholder="Enter email" />
 </Form.Group>
 
 
