@@ -25,11 +25,12 @@ const location = useLocation()
 let from = location.state?.from?.pathname ||'/';
 
 
-const handleSubmit =event=>{
+const handleLogin =event=>{
 event.preventDefault();
 const email =event.target.email.value;
 const password = event.target.password.value;
 signInWithEmailAndPassword(email, password)
+toast('Login Successfully')
 }
 
 const resetPassword=async()=>{
@@ -51,7 +52,7 @@ navigate('/registar')
   return (
     <div className='container w-50 mx-auto mt-3'>
       <h1 className='text-primary text-center'> Please login </h1>
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleLogin}>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
     <Form.Control ref={emailRef} type="email" name='email' placeholder="Enter email" required />

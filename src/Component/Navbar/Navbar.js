@@ -12,7 +12,7 @@ const Navbar = () => {
   }
   return (
     <div className='navbar'>
-      <h3>My Pashion</h3>
+      <p className='title'>My Pashion</p>
       <div className='header'>
       <CustomLink to='/'>Home</CustomLink>
       <CustomLink to='/checkout'>Checkout</CustomLink>

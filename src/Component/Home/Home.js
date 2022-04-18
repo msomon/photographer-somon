@@ -20,7 +20,7 @@ const Home = () => {
    
    console.log(bundles);
   return (
-    <div className='container slider'>
+    <div className='container carosel'>
     <Carousel activeIndex={index} onSelect={handleSelect}>
     <Carousel.Item>
       <img

@@ -9,7 +9,7 @@ const Bundles = ({bundle}) => {
     <div className='bundle'>
       <img src={img} alt="" />
       <div className='bundle-info'>
-      <h4>Name: {bundle.package}</h4>
+      <h4>Package: {bundle.package}</h4>
       <p>Description: {description}</p>
       <h5>Price: {price}</h5>
       <Link className='booking btn btn-success' to='/checkout'>Booking Now</Link>

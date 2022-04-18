@@ -19,3 +19,26 @@ margin-top: 10px;
   text-decoration: none;
   
 }
+
+
+/* //  responsive  // */
+
+@media(max-width:576px){
+  .bundle{
+   
+    margin: 5px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 520px;
+    margin-left: 5px;
+  }
+  .bundle img{
+    width: 400px;
+    height: 250px;
+   border-radius: 10px;
+   margin: auto;
+  }
+  
+}
+
