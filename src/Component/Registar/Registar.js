@@ -22,6 +22,9 @@ import 'react-toastify/dist/ReactToastify.css';
     const [updateProfile,updateError]= useUpdateProfile(auth)
     const [agree,setAgree]= useState(false);
   
+    if(loading){
+      <p>loading..</p>
+    }
   
     const registar =async(event)=>{
       event.preventDefault()
@@ -65,6 +68,7 @@ import 'react-toastify/dist/ReactToastify.css';
       Registar
     </Button>
   </Form>
+  <p>{error?.message}</p>
   <p className='mt-2'>Have a Account? <span className='text-primary' onClick={navigateLogin}>Please Login </span></p>
   <CommonLogin></CommonLogin>
   

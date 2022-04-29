@@ -13,7 +13,8 @@
 }
 
 
-/* //   responsive  // */
+/* //   ✔ responsive👍   // */
+
 @media(max-width:576px){
   .carosel{
     width: 550px;

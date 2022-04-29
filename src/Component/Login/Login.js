@@ -1,5 +1,5 @@
 import { Button } from 'react-bootstrap';
-import React, { useRef, useState } from 'react';
+import React, { useRef} from 'react';
 import { Form } from 'react-bootstrap';
 import { useLocation, useNavigate} from 'react-router-dom';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -16,14 +16,16 @@ const navigate= useNavigate();
 const [
   signInWithEmailAndPassword,
   user,
-  error1,
+  loading,
+  error,
 ] = useSignInWithEmailAndPassword(auth);
+
 const [sendPasswordResetEmail] = useSendPasswordResetEmail(
   auth
 );
 const location = useLocation()
 let from = location.state?.from?.pathname ||'/';
- const [error,setError]=useState('')
+
 
 const handleLogin =event=>{
 event.preventDefault();
@@ -68,6 +70,9 @@ navigate('/registar')
   </Button>
 
 </Form>
+<br />
+<p className='text-danger'>{error?.message}</p>
+
      <p className='mt-2'>New somon photography ? <span className='text-primary' onClick={navigateRegistar}>Please Registar </span></p>
      <p className='mt-2'>Forget password ? <span className='text-primary' onClick={resetPassword}>Reset password </span></p>
      <CommonLogin></CommonLogin>
