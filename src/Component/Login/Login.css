@@ -1,3 +1,13 @@
 .login{
   margin-bottom: 100px;
 }
+
+@media(min-width:350px)and (max-width:680px){
+
+  .login{
+    width:80%!important;
+  }
+  .registar{
+    width:80%!important;
+  }
+}

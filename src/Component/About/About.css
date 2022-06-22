@@ -17,3 +17,12 @@ padding: 10px;
   width: 140px;
   border-radius: 30px;
 }
+
+@media(min-width:350px)and (max-width:680px){
+.cart{
+
+  max-width:340px;
+  margin-left: 10px;
+}
+      
+}

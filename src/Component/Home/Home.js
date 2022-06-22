@@ -26,7 +26,7 @@ const Home = () => {
     <Carousel.Item>
       <img
         className="d-block w-100 carosel"
-        src={img1}
+        src={img3}
         alt="First slide"
       />
       <Carousel.Caption>
@@ -49,7 +49,7 @@ const Home = () => {
     <Carousel.Item>
       <img
         className="d-block w-100 carosel"
-        src={img3}
+        src={img1}
         alt="Third slide"
       />
 
@@ -64,14 +64,14 @@ const Home = () => {
   </div>
   <h2 className='text-primary text-center mt-5'>Some Bundles Offer </h2>
   
-  <div className='bundles'>
+  <div className='bundles gap-4'>
    
   {
     bundles.map(bundle=><Bundle bundle={bundle} key={bundle.id}></Bundle>)
   }
   </div>
 
-  <div >
+  <div className='mt-5' >
     <Review></Review>
   </div>
     </div>

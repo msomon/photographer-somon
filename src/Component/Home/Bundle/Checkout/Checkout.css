@@ -1,3 +1,11 @@
 .checkout{
   margin-bottom: 110px;
 }
+
+@media(min-width:350px)and (max-width:680px){
+
+  .checkout{
+    width:80%!important;
+  }
+
+}

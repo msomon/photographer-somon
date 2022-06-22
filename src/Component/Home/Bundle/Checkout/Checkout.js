@@ -17,7 +17,7 @@ const Checkout = () => {
      toast('Submit Successfully')
   }
   return (
-    <div className='container w-50 mx-auto checkout'>
+    <div className='container w-50 mx-auto checkout mt-3'>
     <h1 className='mt-1'>Checkout Now </h1>
     <Form onSubmit={handleSubmit}>
     <Form.Group className="mb-3" controlId="formBasicname">

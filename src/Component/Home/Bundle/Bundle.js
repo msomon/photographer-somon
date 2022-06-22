@@ -8,7 +8,7 @@ const Bundles = ({bundle}) => {
   const {img,description,price}= bundle ;
      
   return (
-      <div className='bundle'>
+      <div className='bundle h-100'>
       <img src={img} alt="" />
       <div className='bundle-info'>
       <h4>Package: {bundle.package}</h4>

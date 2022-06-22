@@ -45,7 +45,7 @@ import 'react-toastify/dist/ReactToastify.css';
       }
   
     return (
-      <div className='container w-50 mx-auto'>
+      <div className='container w-50 registar mt-3'>
         <h1>Registar Now</h1>
         <Form onSubmit={registar}>
         <Form.Group className="mb-3" controlId="formBasicname">
