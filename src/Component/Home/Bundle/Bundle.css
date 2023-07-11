@@ -1,17 +1,19 @@
 .bundle{
-  border: 1px solid wheat;
-  border-radius: 10px;
-  margin: 15px;
-  padding: 15px;
+  height: 450px;
+  width: 300px;
+  box-shadow: 0 0 0 5;
+  padding: 10px;
   text-align: center;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
 
 }
 .bundle img{
-  width: 400px;
-  height: 300px;
- border-radius: 10px;
- justify-content: center;
- align-items: center;
+    max-width: 230px;
+    height: 160px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 .bundle-info{
 margin-top: 10px;
@@ -26,19 +28,27 @@ align-items: center;
 
 /* //  responsive  // */
 
-@media(min-width:350px)and (max-width:680px){
+
+@media (max-width:450px){
   .bundle{
-    min-width: 320px;
-        /* height: 570px ; */
-        padding:0px;
-        margin-left:10px;
+    height:430px;
+    
+  }
+
+} 
+@media(min-width:460px)and (max-width:750px){
+  .bundle{
+    min-width:330px;
+  height: 480px ;
+  padding:10px;
+  margin-left:10px;
   }
   .bundle img{
     padding-top: 5px;
-    width: 250px;
-    /* max-height: 350px; */
-    border-radius: 10px;
-    margin-bottom: 10px;
+width: 230px;
+height: 120px;
+border-radius: 10px;
+margin-bottom: 10px;
   }
   
 }

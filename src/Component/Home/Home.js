@@ -64,7 +64,7 @@ const Home = () => {
   </div>
   <h2 className='text-primary text-center mt-5'>Some Bundles Offer </h2>
   
-  <div className='bundles gap-4'>
+  <div className='bundles row gap-2 '>
    
   {
     bundles.map(bundle=><Bundle bundle={bundle} key={bundle.id}></Bundle>)

@@ -3,14 +3,14 @@
     "img": "./images/dinner.webp",
     "package": "Days Bundle",
     "id": "1",
-    "description":"We are looking for a creative and versatile Photographer . ",
+    "description":"We are looking for a creative and versatile Photographer  a motivated individual who has a passion for good . ",
     "price":"$1000"
   } ,
   {
     "img": "./images/award.webp",
     "package": "Weekly Bundle",
     "id": "2",
-    "description":" We Are Videographer to capture memories and creates exceptional experiences for our clients. ",
+    "description":" We Are Videographer to capture memories and creates exceptional experiences for our clients for liseaning and writing.",
     "price":"$6000"
   } ,
   {
@@ -24,21 +24,21 @@
     "img": "./images/wedding.webp",
     "package": "Marriage Bundle",
     "id": "4",
-    "description":" Real Estate Photographer Qualifications • Have a strong real estate portfolio • Be available for multiple shoots a week • The ability to prioritize multiple tasks, ",
+    "description":" Real Estate Photographer Qualifications • Have a strong real estate portfolio • Be available for multiple shoots a ",
     "price":"$4000"
   } ,
   {
     "img": "./images/birthday.webp",
     "package": "Birthday Bundle",
     "id": "5",
-    "description":" Experienced In All Sorts Of Photography & Specialized In Wedding Photography. Call Now. Stainless Steel Cover & Metallic Page Albums ",
+    "description":" Experienced In All Sorts Of Photography & Specialized In Wedding Photography. Call Now. Stainless Steel  a motivated individual who has a passion ",
     "price":"$1500"
   } ,
   {
     "img": "./images/grandopening.webp",
     "package": "Opening Ceremony Bundle",
     "id": "6",
-    "description":" We take pride in knowing that our approach for events has one sole focus – your business. We take all the stress off your hands, so you never lose a step in running your business ",
+    "description":" We take pride in knowing that our approach for events has one sole focus – your business. We take all the stress ",
     "price":"$2500"
   } 
 ]

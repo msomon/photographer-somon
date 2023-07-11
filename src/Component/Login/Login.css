@@ -2,12 +2,14 @@
   margin-bottom: 100px;
 }
 
-@media(min-width:350px)and (max-width:680px){
-
+@media (max-width:450px){
   .login{
-    width:80%!important;
+    width:50vh;
   }
-  .registar{
-    width:80%!important;
+}
+
+@media (min-width:800px){
+  .login{
+    width:80vh;
   }
 }

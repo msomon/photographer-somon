@@ -1,0 +1,11 @@
+@media (max-width:450px){
+    .register{
+      width:50vh;
+    }
+  }
+  
+  @media (min-width:800px){
+    .register{
+      width:80vh;
+    }
+  }

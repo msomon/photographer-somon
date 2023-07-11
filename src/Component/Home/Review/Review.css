@@ -6,6 +6,7 @@ grid-template-columns: repeat(3,1fr);
 
 .review{
 border: 1px solid blue;
+width: 300px;
 margin: 10px;
 padding: 10px;
 text-align: center;
@@ -13,15 +14,26 @@ border-radius:20px ;
 margin-bottom: 40px;
 }
 .review img{
-width: 300px;
+width: 220px;
 border-radius: 15px;
 }
 
 /* //   responsive  // */
-@media(min-width:350px)and (max-width:680px){
+@media (max-width:450px){
   .reviews{
     display: grid;
     grid-template-columns: repeat(1,1fr);
+    
+    }
+    .review img{
+      width: 200px;
+    }
+}
+
+@media(min-width:460px)and (max-width:750px){
+  .reviews{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     
     }
     .review{

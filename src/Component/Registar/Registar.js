@@ -2,6 +2,7 @@
 import { Button } from 'react-bootstrap';
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
+import './Register.css'
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import CommonLogin from '../CommonLogin/CommonLogin';
@@ -45,7 +46,7 @@ import 'react-toastify/dist/ReactToastify.css';
       }
   
     return (
-      <div className='container w-50 registar mt-3'>
+      <div className=' mx-auto mt-5 p-3 shadow-lg register'>
         <h1>Registar Now</h1>
         <Form onSubmit={registar}>
         <Form.Group className="mb-3" controlId="formBasicname">
@@ -61,10 +62,10 @@ import 'react-toastify/dist/ReactToastify.css';
       <Form.Label>Password</Form.Label>
       <Form.Control name='password' required type="password" placeholder="Password" />
     </Form.Group>
-    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-      <Form.Check className={agree ? "ps-2 text-primary": "ps-2 text-danger"} onClick={()=>setAgree(!agree)} type="checkbox" label="Accept Genius Car Terms and conditions" />
+    <Form.Group className="mb-3 " controlId="formBasicCheckbox">
+      <Form.Check className={ agree ?  "ps-2 text-primary ms-4": "ps-2 text-danger ms-4"} onClick={()=>setAgree(!agree)} type="checkbox" label="Accept Genius Car Terms and conditions" />
     </Form.Group>
-    <Button variant="primary" type="submit">
+    <Button className='ms-3' variant="primary" type="submit">
       Registar
     </Button>
   </Form>

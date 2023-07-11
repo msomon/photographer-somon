@@ -51,7 +51,7 @@ const navigateRegistar=()=>{
 navigate('/registar')
 }
   return (
-    <div className='container w-50 mt-3 login'>
+    <div className=' shadow-lg mx-auto mt-5 p-3 login'>
       <h1 className='text-primary text-center'> Please login </h1>
       <Form onSubmit={handleLogin}>
   <Form.Group className="mb-3" controlId="formBasicEmail">
